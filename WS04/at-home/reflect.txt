@@ -1,0 +1,39 @@
+//Callum Dodge
+//Workshop 4
+//6/8/2018
+//100 229 178
+
+Reflection:
+
+1. A safe empty state where you set the values of the data members to 0, null, or to
+a null terminator. A safe empty state is used to hard code a value to the data members
+so no extra value, data, or memory will be leaked into the data members. Another 
+safe empty state could be setting each data member to null. The reason, null could be described
+as a black hole terminating each value in the variable before hand. 
+
+2. You can minimized code duplication in this workshop by using the function called, 
+isEmpty(), instead of checking to see if the values of the data members are empty or
+null each function. Another way of minimizing code duplication is by putting each if 
+statement on one way to check to see if each condition is met. The last thing you could do
+is to create a function called safeEmptyState() to preset the data members. 
+
+3. The reason why we can access the private data members in the function canTravelWith()
+because this function is a member function in the Passenger class. This member function
+can also access the other Passenger object because of how this parameter was passed 
+through the function in the main.
+
+4. The statement you would need to add to ensure that the function strncpy() works 
+properly is the destination (where is the data going), source (what is the data) and the 
+size. Size is important because it checks to see if the destination is within the range
+of the source. 
+
+5. The thing that I have learned in this workshop is to understand more about member functions
+and constructors. The information I learned about from constructors is that they can be used
+to validate, call other functions, or even set/copy data to a data member. 
+
+Quiz 6 Reflection:
+
+4. Item increase (int num) {
+	quanity += num;
+	return *this;
+   }
